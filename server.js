@@ -23,7 +23,17 @@ app.use(
   })
 )
 
+// middleware
+// app.use(express.static("public"))
+
+// view engine
+// app.set("view engine", "ejs")
+
 app.use("/users", users)
+
+// routes
+// app.get("/", (req, res) => res.render("home"))
+// app.get("/smoothies", (req, res) => res.render("smoothies"))
 
 const PORT = process.env.PORT || 3500
 app.listen(PORT, () =>

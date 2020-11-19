@@ -3,10 +3,11 @@ import { signup, signin, secret } from "../controllers/userCont.js"
 
 const router = express.Router()
 
-router.route("/signup").get(signup)
+router.route("/signup").post(signup)
+// router.route("/signup").post(signup_post)
 
 router.route("/signin").post(signin)
 
-router.route("/secret").post(secret)
+router.route("/secret").get
 
 export default router
